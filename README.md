@@ -6,6 +6,7 @@ This is just a quick note about how to make Vagrant Box available on the LAN. Al
 Inside network section lines below need to be added:
 
 public_network: 192.168.XXX.XXX
+
 type: host-only
 
 They will usually be inserted just below 'private_network:', there might be already 'type' specified but needs to be changed to 'host-only' in order for it to work.
